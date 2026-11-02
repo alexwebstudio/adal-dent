@@ -31,8 +31,8 @@ export default function ContactsPage() {
         title="Контакты и *запись*"
         lead="Позвоните, напишите в WhatsApp или оставьте заявку на сайте."
         crumbs={[{ name: "Контакты", path: "/contacts" }]}
-        image="/images/hero/chair.jpg"
-        imageAlt="Стоматологическая установка в светлом кабинете"
+        image="/images/clinic/reception.jpg"
+        imageAlt="Стойка администратора клиники Adal dent"
       >
         <Button href="#booking" arrow>
           Оставить заявку
@@ -90,7 +90,7 @@ export default function ContactsPage() {
             ) : (
               <div className="on-accent relative flex h-full min-h-[420px] flex-col justify-between overflow-hidden rounded-[18px] bg-accent-press p-6 text-on-accent lg:rounded-[22px] lg:p-10">
                 <div>
-                  <p className="font-display text-[clamp(34px,4vw,60px)] uppercase leading-none">
+                  <p className="font-display text-[clamp(44px,4vw,60px)] uppercase leading-none">
                     {site.city}, {site.address}
                   </p>
                   <p className="mt-3 max-w-[38ch] text-on-accent-muted">{`Откройте маршрут в удобном приложении: ${site.district}.`}</p>

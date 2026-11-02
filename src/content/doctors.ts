@@ -1,6 +1,6 @@
-// Только реальные данные клиники. Выдумывать врачей, имена, образование и стаж нельзя.
+// Только реальные данные клиники. Выдумывать фамилии, образование и стаж нельзя.
 // Когда клиника пришлёт данные: заполните карточку и поставьте published: true, появится страница врача.
-// Слот без фото показывает заглушку. Лишние слоты можно удалить, новые добавить.
+// Врач без фото показывается с заглушкой: добавьте image и imageAlt, когда появится снимок.
 
 export type Doctor = {
   slug: string;
@@ -17,11 +17,11 @@ export type Doctor = {
   published: boolean;
 };
 
-const slot = (index: number): Doctor => ({
-  slug: `doctor-${index}`,
-  name: "Врач клиники",
-  headline: "Врач *клиники*",
-  role: "Фото и данные скоро появятся",
+const doctor = (slug: string, name: string): Doctor => ({
+  slug,
+  name,
+  headline: `Стоматолог *${name}*`,
+  role: "Стоматолог Adal dent",
   specialization: "",
   experience: "",
   about: "",
@@ -32,17 +32,15 @@ const slot = (index: number): Doctor => ({
 
 export const doctors: Doctor[] = [
   {
-    ...slot(1),
-    role: "Стоматолог Adal dent",
+    ...doctor("abylaikhan", "Абылайхан"),
     image: "/images/clinic/doctor.jpg",
-    imageAlt: "Стоматолог клиники Adal dent в белом халате и бинокулярных лупах показывает большие пальцы",
+    imageAlt: "Стоматолог Абылайхан в белом халате и бинокулярных лупах",
   },
-  slot(2),
-  slot(3),
-  slot(4),
+  doctor("nurbol", "Нурбол"),
+  doctor("ratmir", "Ратмир"),
 ];
 
-export const publishedDoctors = doctors.filter((doctor) => doctor.published);
+export const publishedDoctors = doctors.filter((item) => item.published);
 
 export function getDoctor(slug: string) {
   return publishedDoctors.find((item) => item.slug === slug);

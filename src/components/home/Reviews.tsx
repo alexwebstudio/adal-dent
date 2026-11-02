@@ -23,7 +23,7 @@ export function Reviews() {
           </p>
         }
       />
-      <Reveal group className="grid gap-3 md:grid-cols-3 lg:gap-4">
+      <Reveal group className="reviews-rail gap-3 md:grid md:grid-cols-3 lg:gap-4">
         {reviews.map((review, index) => (
           <figure key={index} data-reveal-item="" className={cx("flex min-h-[240px] flex-col justify-between gap-8 rounded-[18px] p-5 lg:rounded-[22px] lg:p-6", review.placeholder ? "dash-card" : "bg-surface-2")}>
             <div>

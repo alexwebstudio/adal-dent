@@ -34,7 +34,7 @@ export default function PrivacyPage() {
     <section data-tone="surface" className="section-card page-top">
       <Breadcrumbs items={[{ name: "Политика конфиденциальности", path: "/privacy" }]} />
       <div className="mt-8 max-w-[860px]">
-        <AnimatedTitle as="h1" text="Политика *конфиденциальности*" />
+        <AnimatedTitle as="h1" text="Политика *конфиденциальности*" className="max-md:!text-[11vw]" />
         <div className="mt-10">
           {sections.map((section) => (
             <div key={section.title} className="hair-row py-6">

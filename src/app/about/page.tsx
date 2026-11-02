@@ -40,8 +40,8 @@ export default function AboutPage() {
         title="Клиника рядом *с домом*"
         lead={`Стоматология в микрорайоне Аксай-1 для взрослых и детей: ${site.hours}.`}
         crumbs={[{ name: "О клинике", path: "/about" }]}
-        image="/images/hero/cabinet.jpg"
-        imageAlt="Светлый стоматологический кабинет"
+        image="/images/clinic/lobby.jpg"
+        imageAlt="Холл клиники Adal dent с вывеской и стойкой администратора"
       >
         <Button booking arrow>
           Записаться на приём

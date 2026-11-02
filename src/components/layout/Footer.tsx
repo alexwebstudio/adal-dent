@@ -19,7 +19,7 @@ export function Footer() {
 
         <div className="grid gap-10 border-t border-line py-10 lg:grid-cols-12 lg:py-12">
           <div className="lg:col-span-5">
-            <p className="font-display text-[32px] uppercase leading-none lg:text-[40px]">{site.slogan}</p>
+            <p className="font-display text-[40px] uppercase leading-none">{site.slogan}</p>
             <p className="mt-4 max-w-[40ch] text-ink-muted">{footer.description}</p>
           </div>
 

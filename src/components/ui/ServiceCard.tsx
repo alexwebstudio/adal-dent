@@ -32,7 +32,7 @@ export function QuestionCard() {
   const { question } = servicesBlock;
   return (
     <div className="on-accent flex h-full min-h-[280px] flex-col justify-between gap-8 rounded-[18px] p-5 text-on-accent lg:min-h-[320px] lg:rounded-[22px] lg:p-7" style={{ background: "var(--bright)" }}>
-      <p className="font-display text-[clamp(36px,3.4vw,54px)] uppercase leading-none">{question.title}</p>
+      <p className="font-display text-[clamp(46px,3.4vw,54px)] uppercase leading-none">{question.title}</p>
       <div>
         <p className="mb-5 max-w-[34ch]">{question.text}</p>
         <Button booking arrow variant="light">

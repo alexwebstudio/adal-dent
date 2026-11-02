@@ -28,7 +28,6 @@ npm run start
 | Контакты, часы, рейтинг | `src/content/site.ts` |
 | Прайс | `src/content/prices.ts`: сумма вместо `price: null` заменяет кнопку «Уточнить» |
 | Врачи | `src/content/doctors.ts`: данные, фото в `public/images/clinic/`, затем `published: true` |
-| Общее фото команды | `PhotoSlot` в `src/components/home/Doctors.tsx` |
 | Отзывы | `src/content/reviews.ts`: дословный текст, новые добавляются в конец |
 | Работы до/после | `src/content/cases.ts`: блок и страница `/cases` появятся с первой работой |
 | Временные фото | заменить файлы в `public/images/hero` и `public/images/services` |

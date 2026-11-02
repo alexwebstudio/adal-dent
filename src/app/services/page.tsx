@@ -27,8 +27,8 @@ export default function ServicesPage() {
         title="Все услуги в *одной* клинике"
         lead="Каждое направление начинается одинаково: осмотр, диагностика и понятный план."
         crumbs={[{ name: "Услуги", path: "/services" }]}
-        image="/images/hero/cabinet.jpg"
-        imageAlt="Светлый стоматологический кабинет"
+        image="/images/clinic/cabinet.jpg"
+        imageAlt="Лечебный кабинет клиники Adal dent"
       >
         <Button booking arrow>
           Записаться на приём

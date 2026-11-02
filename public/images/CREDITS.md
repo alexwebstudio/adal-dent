@@ -6,8 +6,6 @@
 
 - images/hero/smile.jpg — Vitaly Gariev — https://images.unsplash.com/photo-1758600587683-d86675a2f6e9
 - images/hero/consultation.jpg — Caroline LM — https://images.unsplash.com/photo-1606811842243-af7e16970c1f
-- images/hero/cabinet.jpg — Benyamin Bohlouli — https://images.unsplash.com/photo-1629909613654-28e377c37b09
-- images/hero/chair.jpg — Ozkan Guner — https://images.unsplash.com/photo-1643660527098-559f89e45a92
 - images/hero/xray.jpg — Harold Hisona — https://images.unsplash.com/photo-1777445374290-eedda5be8e5b
 - images/hero/tablet.jpg — Quang Tri NGUYEN — https://images.unsplash.com/photo-1600170311833-c2cf5280ce49
 - images/hero/lightbox.jpg — Harold Hisona — https://images.unsplash.com/photo-1777444969135-caf869407707

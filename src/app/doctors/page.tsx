@@ -25,8 +25,8 @@ export default function DoctorsPage() {
         title="Врачи, которые *объясняют*"
         lead="Запишитесь на приём, а администратор подскажет, какой врач вам нужен."
         crumbs={[{ name: "Врачи", path: "/doctors" }]}
-        image={doctorsBlock.teamPhoto.src}
-        imageAlt={doctorsBlock.teamPhoto.alt}
+        image={doctorsBlock.photo.src}
+        imageAlt={doctorsBlock.photo.alt}
         objectPosition="50% 20%"
       >
         <Button booking arrow>
@@ -35,11 +35,11 @@ export default function DoctorsPage() {
       </PageHero>
 
       <SectionCard>
-        <SectionHead eyebrow="Врачи" title="Команда *Adal dent*" lead={doctorsBlock.lead} />
-        <Reveal group className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-x-5 lg:gap-y-8">
+        <SectionHead eyebrow={doctorsBlock.eyebrow} title={doctorsBlock.title} lead={doctorsBlock.lead} />
+        <Reveal group className="grid grid-cols-1 gap-x-4 gap-y-6 sm:grid-cols-3 lg:gap-x-5 lg:gap-y-8">
           {doctors.map((doctor) => (
             <div key={doctor.slug} data-reveal-item="">
-              <DoctorCard doctor={doctor} sizes="(min-width: 1024px) 24vw, (min-width: 640px) 46vw, 100vw" />
+              <DoctorCard doctor={doctor} sizes="(min-width: 640px) 32vw, 100vw" />
               {doctor.specialization && <p className="mt-3 text-[15px] leading-snug text-ink-muted">{doctor.specialization}</p>}
               {doctor.experience && <Mono className="mt-1 block !text-[13px]">стаж {doctor.experience}</Mono>}
             </div>

@@ -214,6 +214,29 @@ button {
   .t-stat {
     font-size: clamp(48px, 7vw, 100px);
   }
+  /* На телефоне и планшете размер привязан к ширине экрана: узкий шрифт читается мелко. */
+  @media (max-width: 1023px) {
+    .t-h1 {
+      font-size: 9vw;
+    }
+    .t-h2 {
+      font-size: 7vw;
+    }
+    .t-stat {
+      font-size: 9vw;
+    }
+  }
+  @media (max-width: 767px) {
+    .t-h1 {
+      font-size: 15.5vw;
+    }
+    .t-h2 {
+      font-size: 13.6vw;
+    }
+    .t-stat {
+      font-size: 17vw;
+    }
+  }
   .t-h3 {
     font-size: clamp(20px, 2vw, 28px);
     font-weight: 600;
@@ -671,7 +694,7 @@ button {
     position: relative;
     display: inline-block;
     font-family: var(--font-display);
-    font-size: clamp(46px, 7.4vw, 104px);
+    font-size: clamp(60px, 7.4vw, 104px);
     line-height: 1.06;
     text-transform: uppercase;
     transition: color 0.25s;
@@ -952,7 +975,7 @@ button {
   .footer-wordmark {
     display: block;
     font-family: var(--font-display);
-    font-size: min(21vw, 400px);
+    font-size: min(30vw, 480px);
     line-height: 0.82;
     padding-bottom: 0.1em;
     letter-spacing: 0.012em;
@@ -986,6 +1009,26 @@ button {
   @media (min-width: 1024px) {
     .photo-slot {
       border-radius: 22px;
+    }
+  }
+
+  /* Отзывы на телефоне листаются вбок: столбец из девяти карточек слишком длинный. */
+  @media (max-width: 767px) {
+    .reviews-rail {
+      display: flex;
+      margin-inline: calc(var(--gutter) * -1);
+      padding-inline: var(--gutter);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-inline: var(--gutter);
+      scrollbar-width: none;
+    }
+    .reviews-rail::-webkit-scrollbar {
+      display: none;
+    }
+    .reviews-rail > * {
+      flex: 0 0 84%;
+      scroll-snap-align: start;
     }
   }
 }

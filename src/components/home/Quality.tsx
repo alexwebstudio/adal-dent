@@ -16,7 +16,10 @@ export function Quality() {
 
       <div className="relative lg:-mt-6 lg:h-[640px]">
         <div className="rings" aria-hidden="true" />
-        <Tooth3D parallax={-30} sizes="(min-width: 1024px) 520px, 70vw" className="relative mx-auto w-[min(70vw,300px)] lg:absolute lg:left-1/2 lg:top-1/2 lg:w-[500px] lg:-translate-x-1/2 lg:-translate-y-1/2" />
+        {/* Позиция на обёртке: GSAP пишет transform в элемент с parallax и закрепил бы десктопное смещение. */}
+        <div className="relative mx-auto w-[min(70vw,300px)] lg:absolute lg:left-1/2 lg:top-1/2 lg:w-[500px] lg:-translate-x-1/2 lg:-translate-y-1/2">
+          <Tooth3D parallax={-30} sizes="(min-width: 1024px) 520px, 70vw" className="relative" />
+        </div>
 
         <Reveal group className="relative z-10 mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:static lg:mt-0">
           {quality.cards.map((card, index) => (
